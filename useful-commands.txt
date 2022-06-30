@@ -1,0 +1,11 @@
+# GOAL: enable key repeat on mac
+# https://vimforvscode.com/enable-key-repeat-vim
+defaults write -g ApplePressAndHoldEnabled -bool false
+
+# GOAL: remove all icons from mac Desktop
+defaults write com.apple.finder CreateDesktop false
+killall Finder
+
+# GOAL: show all icons from mac Desktop
+defaults write com.apple.finder CreateDesktop true
+killall Finder
