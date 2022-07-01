@@ -9,3 +9,8 @@ killall Finder
 # GOAL: show all icons from mac Desktop
 defaults write com.apple.finder CreateDesktop true
 killall Finder
+
+# GOAL: check if file has a symlink
+readlink -f /<path-to-file>
+readlink -f ~/.zshrc
+
